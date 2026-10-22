@@ -96,7 +96,7 @@ details>p{padding-bottom:14px;color:var(--ink)}
 .next{margin-top:24px;border-top:1px solid var(--ru)}
 .cards{display:grid;gap:14px;margin-top:18px}
 .cards li{border:1.5px dashed var(--mu);border-radius:16px;padding:18px}
-.cards h3{margin-top:10px}.cards p{margin-top:8px;font-size:16px}
+.cards h3{margin-top:10px}.cards p{margin-top:8px;font-size:16px}.cards .go{margin-top:14px}
 .tn{color:var(--mu);font-size:15px}
 .foot{max-width:1120px;margin:56px auto 0;padding:20px 18px 40px;border-top:1px solid var(--ru);font-size:14px;color:var(--mu)}
 @media (min-width:860px){
@@ -110,7 +110,7 @@ details>p{padding-bottom:14px;color:var(--ink)}
  .rep li{grid-template-columns:110px minmax(0,1fr) auto}}
 .hn{margin-top:10px;color:var(--mu);font-size:15px}
 .empty{margin-top:10px;padding:14px 16px;border:1.5px dashed var(--mu);border-radius:14px;color:var(--ink)}
-@media (min-width:860px){.cards{grid-template-columns:minmax(0,560px)}}
+@media (min-width:860px){.cards{grid-template-columns:1fr 1fr;max-width:720px}}
 .sheet.vs td{vertical-align:top;padding:10px 10px 12px}
 .san{display:block;font:500 17px/1.3 "CN Mono",ui-monospace,monospace}
 .ex{display:block;margin-top:4px;font:400 13.5px/1.5 "CN Sans",sans-serif;color:var(--mu);word-break:keep-all}
@@ -122,7 +122,7 @@ details>p{padding-bottom:14px;color:var(--ink)}
 <main id="main"><section class="hero" id="top">
 <h1>체스, 오프닝 세 개로 시작해요</h1>
 <p class="lede">백일 때 하나, 흑일 때 상대 첫 수(1.e4, 1.d4)에 맞춰 하나씩. 영상으로 한 수씩 보고, 기보로 따라 두고, 하루 30분 4주 플랜으로 익혀요.</p>
-<nav class="jump" aria-label="바로 가기"><a href="#italian">이탈리안 게임</a><a href="#caro">카로칸 디펜스</a><a href="#qgd">퀸즈 갬빗 거절</a><a href="#plan">4주 플랜</a></nav>
+<nav class="jump" aria-label="바로 가기"><a href="#italian">이탈리안 게임</a><a href="#caro">카로칸 디펜스</a><a href="#qgd">퀸즈 갬빗 거절</a><a href="#plan">4주 플랜</a><a href="guide.html">학습 가이드</a></nav>
 </section>
 <section class="sum" aria-labelledby="h-rep"><h2 id="h-rep">추천 레퍼토리</h2><p class="sub">완전히 초보인 사람에게 추천하는 오프닝은 다음과 같습니다.</p><ul class="rep">
 <li><span class="who">백</span><span class="what"><b>이탈리안 게임</b><span lang="en">Italian Game</span></span><a class="go" href="#italian">영상 보기</a></li>
@@ -163,6 +163,7 @@ details>p{padding-bottom:14px;color:var(--ink)}
 <div class="habit"><h3>수 두기 전 습관 (필수)</h3><ul class=""><li>상대 마지막 수가 내 기물을 공격하는가?</li><li>내가 두려는 수가 기물을 허무하는가?</li></ul><p class="hn">(간단히 “기물 안 걸기 + 상대 위협 체크”)</p></div>
 <ol class="weeks"><li class="wk"><h4>1주차: 규칙 마스터 &amp; 기초 메이트</h4><p class="goal">목표: 불법 수 없이 완전한 게임 두기, 기본 체크메이트(K+Q vs K, K+R vs K) 익히기.</p><ul class=""><li>Day 1~2: Lichess Learn 섹션 또는 한국어 유튜브로 기물 움직임, 캐슬링, 앙파상, 프로모션 완벽히.</li><li>Day 3~4: 기본 메이트 연습 + 쉬운 체크메이트 퍼즐.</li><li>Day 5~7: 1수 전술 퍼즐 + 저레벨 봇과 느린 게임.</li><li>추천: Lichess Learn, 체스 TV 기본 규칙 플레이리스트.</li></ul></li><li class="wk"><h4>2주차: 기본 전술 패턴 + 오프닝 원칙</h4><p class="goal">목표: 포크(Fork), 핀(Pin), 스큐어 인식. 센터 장악·기물 개발·조기 캐슬링 원칙 적용.</p><ul class=""><li>매일 주제별 퍼즐(포크·핀 우선) + Rapid 게임 1판 + 간단 복기.</li><li>오프닝은 암기 금지. 원칙만 따르기 (이탈리안 게임이나 런던 같은 간단한 시스템 1개만 참고해도 충분).</li><li>추천: ChessBrah Building Habits 0~700 시리즈.</li></ul></li><li class="wk"><h4>3주차: 전술 강화 + 기본 엔딩</h4><p class="goal">목표: 백랭 메이트, 디스커버드 어택 등 추가 패턴. 킹+폰 엔드게임 기초(opposition, 룰 오브 스퀘어).</p><ul class=""><li>혼합 퍼즐 유지 + 엔딩 드릴 몇 분 + 게임·복기.</li><li>패배 게임은 최소 1가지 실수 기록.</li></ul></li><li class="wk"><h4>4주차: 통합 &amp; 복기 습관화</h4><p class="goal">목표: 블런더 체크 자동화, 게임 분석 루틴 정착.</p><ul class=""><li>퍼즐 유지 + 게임 1~2판 + 철저한 복기(먼저 본인이 찾고, 이후 Lichess “Learn from your mistakes”).</li><li>약한 패턴 집중 복습.</li></ul></li></ol></section>
 <section class="next" aria-labelledby="h-next"><h2 id="h-next">다음에 배울 것</h2><ul class="cards">
+<li><span class="tag">새 페이지</span><h3>입문자 학습·운영 가이드</h3><p>규칙, 기물 가치, 오프닝 원칙, 전술 모티프, 엔드게임, 훈련 루틴을 한곳에 모았습니다. 원문 PDF 「체스 입문자 학습 및 운영 가이드」 기반.</p><a class="go" href="guide.html">가이드 보기</a></li>
 <li><span class="tag">준비 중</span><h3>전술 퍼즐</h3><p>초보·중급 게임의 대부분은 전술로 결정됩니다. 이 패턴을 눈으로 익히세요.</p><p class="tn">포크 (Fork / 양걸이) · 핀 (Pin) · 스큐어 (Skewer) · 디스커버드 어택 (Discovered Attack)</p><p>연습 습관: 매 수마다 “체크·캡처·위협”을 확인하세요. chess.com이나 Lichess 전술 퍼즐을 매일 조금 푸는 게 가장 빠른 실력 향상 방법입니다.</p></li></ul></section>
 </main>
 <footer class="foot"><p>내용 출처: 체스 입문 정리 <span style="white-space:nowrap">(그록헤비 3회 조사, 2026-10-19)</span>. 수순, 수별 설명, 핵심 3가지는 각 영상을 따랐어요.</p></footer>
